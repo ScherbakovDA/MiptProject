@@ -1,17 +1,26 @@
-
 #ifndef MIPTPROJECT_COMPONENTS_H
 #define MIPTPROJECT_COMPONENTS_H
 
 #include "Libraries.h"
 #include "Dot.h"
 
-class GameObject;
+class GameObject
+{
+public:
+
+    void AddComponent();
+
+    template<typename T>
+
+    T* GetComponent();
+
+};
 
 class AbstractClass
 {
 public:
     GameObject* gameObject;
-    const char& Type;
+    const char* Type;
     virtual void make() = 0;
     virtual ~AbstractClass();
 };
@@ -38,16 +47,5 @@ public:
     Dot SetSpriteCenter();
 };
 
-class GameObject
-{
-public:
-    std::vector<AbstractClass*> ComponentsList;
 
-    void AddComponent();
-
-    template<typename T>
-
-    T* GetComponent();
-
-};
 #endif //MIPTPROJECT_COMPONENTS_H

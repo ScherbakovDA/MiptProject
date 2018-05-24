@@ -1,5 +1,3 @@
-
-
 #ifndef MIPTPROJECT_DOT_H
 #define MIPTPROJECT_DOT_H
 
@@ -7,6 +5,7 @@
 
 class Dot
 {
+public:
     Dot(float x, float y);
     std::pair<float, float > coords;
 };

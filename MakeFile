@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-c -std=c++11
 LDFLAGS=-lsfml-graphics -lsfml-window -lsfml-system -lpthread
-SOURCES=main.cpp Rendering/Drawing.cpp Instruments/Dot.cpp Instruments/Streaming.cpp Logic/OverloadOperators.cpp
+SOURCES=main.cpp Rendering/Sprite.cpp Rendering/Drawing.cpp Instruments/Dot.cpp Instruments/Streaming.cpp Logic/OverloadOperators.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=main
 

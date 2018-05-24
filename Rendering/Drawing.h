@@ -1,5 +1,3 @@
-
-
 #ifndef MIPTPROJECT_DRAWING_H
 #define MIPTPROJECT_DRAWING_H
 

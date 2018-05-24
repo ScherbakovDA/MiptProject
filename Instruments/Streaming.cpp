@@ -1,5 +1,3 @@
-
-
 #include "Streaming.h"
 
 Window::Window()

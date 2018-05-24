@@ -1,5 +1,3 @@
-
-
 #ifndef MIPTPROJECT_WINDOW_H
 #define MIPTPROJECT_WINDOW_H
 

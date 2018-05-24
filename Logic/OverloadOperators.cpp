@@ -1,4 +1,3 @@
-
 #include "OverloadOperators.h"
 
 std::pair<float ,float > operator+(std::pair<float ,float > vec1, std::pair<float ,float > vec2)

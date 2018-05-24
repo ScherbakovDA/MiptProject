@@ -7,6 +7,8 @@
 
 int main() {
 
+    Sprite circle(10,20);
+
     Drawing();
 
     return 0;

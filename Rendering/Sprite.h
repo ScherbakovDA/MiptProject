@@ -1,11 +1,10 @@
-
-
 #ifndef MIPTPROJECT_SPRITE_H
 #define MIPTPROJECT_SPRITE_H
 
 #include "../Instruments/Libraries.h"
 #include "../Instruments/Dot.h"
 #include "../Instruments/Components.h"
+#include "Window.h"
 
 
 class Sprite
@@ -13,14 +12,13 @@ class Sprite
     sf::Sprite sprite;
     sf::Texture texture;
     sf::CircleShape circle;
-    Dot center;
 
 public:
 
-    Sprite();
+    Sprite(float x, float y);
 
     sf::Texture SetTexture();
-    std::string ObjectName;
+    std::string filename;
 
     void Draw();
 };
