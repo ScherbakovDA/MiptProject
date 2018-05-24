@@ -1,6 +1,4 @@
-//
-// Created by denis on 21.05.18.
-//
+
 
 #ifndef MIPTPROJECT_SPRITE_H
 #define MIPTPROJECT_SPRITE_H
@@ -19,7 +17,7 @@ class Sprite
 
 public:
 
-    Sprite(GameObject* gameObject, std::string textureName);
+    Sprite();
 
     sf::Texture SetTexture();
     std::string ObjectName;

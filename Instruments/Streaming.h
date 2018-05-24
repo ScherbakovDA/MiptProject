@@ -1,6 +1,3 @@
-//
-// Created by denis on 21.05.18.
-//
 
 #ifndef MIPTPROJECT_STREAMING_H
 #define MIPTPROJECT_STREAMING_H
@@ -19,12 +16,16 @@ public:
     float LastTime;
     std::mutex firstStream;
     std::mutex secondStream;
-    std::vector<GameObject> GameObjects;
+
+    std::vector<GameObject*> GameObjects;
+    void AddObject(GameObject* object);
+
+    static Streaming* GetInstance();
 
 private:
 
     Streaming();
-    static Streaming* getInstance();
+
 };
 
 

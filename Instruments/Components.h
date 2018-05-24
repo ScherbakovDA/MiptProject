@@ -1,6 +1,3 @@
-//
-// Created by denis on 21.05.18.
-//
 
 #ifndef MIPTPROJECT_COMPONENTS_H
 #define MIPTPROJECT_COMPONENTS_H
@@ -50,7 +47,7 @@ public:
 
     template<typename T>
 
-    T& GetComponent();
+    T* GetComponent();
 
 };
 #endif //MIPTPROJECT_COMPONENTS_H

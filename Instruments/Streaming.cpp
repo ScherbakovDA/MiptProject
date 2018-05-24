@@ -1,6 +1,4 @@
-//
-// Created by denis on 22.05.18.
-//
+
 
 #include "Streaming.h"
 
@@ -30,8 +28,13 @@ Streaming::Streaming()
     clock.restart();
 }
 
-Streaming* Streaming::getInstance()
+Streaming* Streaming::GetInstance()
 {
     static Streaming resourse;
     return &resourse;
+}
+
+void Streaming::AddObject(GameObject* object)
+{
+    this->GameObjects.push_back(object);
 }

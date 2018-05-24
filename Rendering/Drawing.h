@@ -1,6 +1,4 @@
-//
-// Created by denis on 21.05.18.
-//
+
 
 #ifndef MIPTPROJECT_DRAWING_H
 #define MIPTPROJECT_DRAWING_H

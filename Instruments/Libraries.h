@@ -1,6 +1,4 @@
-//
-// Created by denis on 21.05.18.
-//
+
 
 #ifndef MIPTPROJECT_LIBRARIES_H
 #define MIPTPROJECT_LIBRARIES_H

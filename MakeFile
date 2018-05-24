@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-c -std=c++11
 LDFLAGS=-lsfml-graphics -lsfml-window -lsfml-system -lpthread
-SOURCES=main.cpp Rendering/Drawing.cpp Instruments/Dot.cpp Instruments/Streaming.cpp
+SOURCES=main.cpp Rendering/Drawing.cpp Instruments/Dot.cpp Instruments/Streaming.cpp Logic/OverloadOperators.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=main
 
@@ -14,4 +14,4 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -rf  Rendering/*.o Instruments/*.o *.o main
+	rm -rf  Rendering/*.o Instruments/*.o Logic/*.o *.o main

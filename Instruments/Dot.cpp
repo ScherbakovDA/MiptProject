@@ -1,6 +1,4 @@
-//
-// Created by denis on 21.05.18.
-//
+
 
 #include "Dot.h"
 
